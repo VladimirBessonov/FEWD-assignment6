@@ -1,0 +1,117 @@
+html {
+    background-color: #DFE3E6;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    width: 960px;
+    margin: 20px auto 0 auto;
+    border: solid 8px #DFE3E6 ;
+    background-color: white;
+}
+
+main {
+display: grid;
+grid-template-columns: 2fr 1fr;
+grid-gap: 20px;
+
+}
+
+a {
+    color: #CC1C0D;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+h1  {
+    font-size: 1em;
+    color: #CC1C0D;
+    background-color: #DFE3E6;
+    border:solid 1px #929CA4;
+    border-radius: 10px 0px 10px 0px ; 
+    padding-left: 10px;
+}
+
+nav {
+    height: 125px;
+    background-image: url('../images/logo.gif');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+  
+}
+
+
+/* LAYOUT SELECTORS */
+header {
+    width: inherit;
+    height: 200px;
+    background: url('../images/header.gif'); 
+    background-repeat: no-repeat;   
+    background-position: top;
+}
+
+aside {
+    margin-right: 10px;
+    min-height: 200px;
+}
+
+ section {
+    margin-left: 10px;
+    min-height: 200px;
+    
+}
+
+
+ul li {
+    display: inline ;
+    padding: 10px;
+    font-size: larger;
+}
+
+footer {
+    border-top: solid 1px #DFE3E6 ;
+    clear: both;
+    text-align: center;
+    font-size: small;
+    padding-top: 1em;
+    color: #929CA4;
+    margin: 10px;
+}
+
+article p:nth-child(1) {
+    background-image: url('../images/logo_vprospect.gif');
+    background-repeat: no-repeat;   
+    background-position: left top;
+    padding-left: 5em;
+    
+}
+article p:nth-child(1)::first-line {
+    font-weight: bold;
+}
+
+article p:nth-child(2) {
+    background: url('../images/logo_vconvert.gif') no-repeat 0px 10px;
+    padding-left: 5em;
+    
+}
+article p:nth-child(2)::first-line {
+    font-weight: bold;
+}
+
+article p:nth-child(3) {
+    background: url('../images/logo_vretain.gif') no-repeat 0px 10px;
+    padding-left: 5em;
+    
+}
+article p:nth-child(3)::first-line {
+    font-weight: bold;
+}
